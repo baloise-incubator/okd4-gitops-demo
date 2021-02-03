@@ -4,7 +4,7 @@ kind: Route
 metadata:
   name: gitops-demo-http
 spec:
-  host: gitops-demo.apps.baloise.dev
+  host: gitops-test.apps.baloise.dev
   path: /
   port:
     targetPort: http
