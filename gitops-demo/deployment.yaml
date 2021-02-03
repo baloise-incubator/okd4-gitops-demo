@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: gitops-demo
-          image: "registry.baloise.dev/example/gitops-nginx-demo:50a2697f6497b3bd3a94e982eee88a32dea5a381"
+          image: "registry.baloise.dev/example/gitops-nginx-demo:a9f53097d5c247558818e21631bb1ebe641a3c9d"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
