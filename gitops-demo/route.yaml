@@ -1,0 +1,18 @@
+# Source: gitops-nginx-demo-test/charts/gitops-demo/templates/ingress-route.yaml
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: gitops-demo-http
+spec:
+  host: gitops-demo.apps.baloise.dev
+  path: /
+  port:
+    targetPort: http
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: gitops-demo
+    weight: 100
+  wildcardPolicy: None
