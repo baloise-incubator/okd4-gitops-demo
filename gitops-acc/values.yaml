@@ -1,0 +1,23 @@
+app:
+  replicaCount: 2
+  image:
+    repository: registry.baloise.dev/example/gitops-nginx-demo
+    tag: a9f53097d5c247558818e21631bb1ebe641a3c9d
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: gitops-acc.apps.baloise.dev
+  readinessProbe:
+    httpGet:
+      path: /
+      port: 8080
+    initialDelaySeconds: 5
+    timeoutSeconds: 1
+  resources:
+    requests:
+      cpu: 10m
+      memory: 16Mi
+    limits:
+      cpu: 200m
+      memory: 32Mi
