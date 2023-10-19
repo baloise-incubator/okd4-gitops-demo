@@ -1,8 +1,8 @@
 app:
   replicaCount: 2
   image:
-    repository: registry.baloise.dev/example/gitops-nginx-demo
-    tag: a9f53097d5c247558818e21631bb1ebe641a3c9d
+    repository: docker.io/niiku/gitops-nginx-demo
+    tag: v0.1.0
   network:
     http:
       servicePort: 8080
