@@ -4,6 +4,6 @@ metadata:
   name: gitops-nginx-demo
 spec:
   subscriptions:
-    images:
-      - repoURL: docker.io/niiku/gitops-nginx-demo
+    - image:
+        repoURL: docker.io/niiku/gitops-nginx-demo
 #        semverConstraint: ^1.24.0
