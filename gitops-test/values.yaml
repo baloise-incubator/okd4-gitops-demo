@@ -19,5 +19,5 @@ app:
       cpu: 10m
       memory: 16Mi
     limits:
-      cpu: 200m
+      cpu: 1
       memory: 32Mi
