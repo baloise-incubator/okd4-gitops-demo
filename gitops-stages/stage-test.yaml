@@ -8,11 +8,13 @@ spec:
       images:
         - repoURL: docker.io/niiku/gitops-nginx-demo
 #          semverConstraint: ^1.24.0
-#  promotionMechanisms:
-#    gitRepoUpdates:
-#      - repoURL:
-#        writeBranch: main
-#        kustomize:
-#          images:
-#            - image: nginx
-#              path: stages/uat
+  promotionMechanisms:
+    gitRepoUpdates:
+      - repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+        writeBranch: master
+        helm:
+          images:
+            - image: docker.io/niiku/gitops-nginx-demo
+              valuesFilePath: gitops-test/values.yaml
+              key: app.image.tag # Update this key to reference the new image version
+              value: Tag
