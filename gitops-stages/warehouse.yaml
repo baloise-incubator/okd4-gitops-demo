@@ -5,5 +5,5 @@ metadata:
 spec:
   subscriptions:
     images:
-      - repoURL: docker.io/niiku/gitops-nginx-demo
+      repoURL: docker.io/niiku/gitops-nginx-demo
 #        semverConstraint: ^1.24.0
