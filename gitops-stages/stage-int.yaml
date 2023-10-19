@@ -3,8 +3,9 @@ kind: Stage
 metadata:
   name: gitops-int
 spec:
-  upstreamStages:
-    - name: gitops-test
+  subscriptions:
+    upstreamStages:
+      - name: gitops-test
   promotionMechanisms:
     gitRepoUpdates:
       - repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
