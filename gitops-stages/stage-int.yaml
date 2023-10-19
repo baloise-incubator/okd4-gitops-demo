@@ -1,0 +1,17 @@
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Stage
+metadata:
+  name: gitops-int
+spec:
+  upstreamStages:
+    - name: gitops-test
+  promotionMechanisms:
+    gitRepoUpdates:
+      - repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+        writeBranch: master
+        helm:
+          images:
+            - image: docker.io/niiku/gitops-nginx-demo
+              valuesFilePath: gitops-int/values.yaml
+              key: app.image.tag # Update this key to reference the new image version
+              value: Tag
