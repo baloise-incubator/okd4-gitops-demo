@@ -1,0 +1,5 @@
+images:
+  - image: docker.io/niiku/gitops-nginx-demo
+    key: app.image.tag
+    value: Tag
+    autoPromote: true
