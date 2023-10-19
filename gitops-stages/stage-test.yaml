@@ -3,7 +3,8 @@ kind: Stage
 metadata:
   name: gitops-test
 spec:
-  warehouse: gitops-nginx-demo
+  subscriptions:
+    warehouse: gitops-nginx-demo
   promotionMechanisms:
     gitRepoUpdates:
       - repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
