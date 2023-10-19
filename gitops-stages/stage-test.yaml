@@ -3,7 +3,11 @@ kind: Stage
 metadata:
   name: gitops-test
 spec:
-  warehouse: gitops-nginx-demo
+  subscriptions:
+    repos:
+      images:
+        - repoURL: docker.io/niiku/gitops-nginx-demo
+#          semverConstraint: ^1.24.0
   promotionMechanisms:
     gitRepoUpdates:
       - repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
