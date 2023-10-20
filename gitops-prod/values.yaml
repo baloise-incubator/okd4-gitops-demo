@@ -12,7 +12,7 @@ app:
     httpGet:
       path: /
       port: 8080
-    initialDelaySeconds: 30
+    initialDelaySeconds: 15
     timeoutSeconds: 1
   resources:
     requests:
