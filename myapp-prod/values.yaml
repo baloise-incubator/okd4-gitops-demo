@@ -7,7 +7,7 @@ app:
     http:
       servicePort: 8080
       ingress:
-        host: gitops.apps.baloise.dev
+        host: myapp-prod.apps.baloise.dev
   readinessProbe:
     httpGet:
       path: /
