@@ -2,7 +2,7 @@ app:
   replicaCount: 1
   image:
     repository: docker.io/niiku/gitops-nginx-demo
-    tag: v0.4.0
+    tag: v0.2.0
   network:
     http:
       servicePort: 8080
