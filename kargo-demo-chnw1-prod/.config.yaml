@@ -1,0 +1,6 @@
+  kargo: 
+    name: kargo-demo
+    autoPromote: false
+    images:
+      - image: docker.io/niiku/gitops-nginx-demo
+        key: app.image.tag

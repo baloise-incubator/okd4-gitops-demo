@@ -1,2 +1,1 @@
 # GitOps Demo Config Repository
-

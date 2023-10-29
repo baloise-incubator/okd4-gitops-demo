@@ -1,4 +1,4 @@
-app:
+kargo-demo:
   replicaCount: 1
   image:
     repository: docker.io/niiku/gitops-nginx-demo
@@ -7,7 +7,7 @@ app:
     http:
       servicePort: 8080
       ingress:
-        host: gitops.apps.baloise.dev
+        host: kargo-demo-chnw2-prod.apps.baloise.dev
   readinessProbe:
     httpGet:
       path: /
