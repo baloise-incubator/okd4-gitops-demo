@@ -3,4 +3,4 @@
     autoPromote: true
     images:
       - image: docker.io/niiku/gitops-nginx-demo
-        key: app.image.tag
+        key: kargo-demo.image.tag
