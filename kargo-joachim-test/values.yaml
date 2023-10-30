@@ -1,7 +1,7 @@
 kargo-joachim:
   kargo-joachim-chart:
     image:
-      tag: v0.15.0
+      tag: v0.14.0
     network:
       http:
         ingress:
