@@ -2,7 +2,7 @@ apiVersion: v2
 name: kargo-joachim-dev
 version: 1.0.0
 dependencies:
-  - name: kargo-joachim-chart
-    version: 1.0.0
-    repository: file://../.charts/kargo-joachim-chart
+  - name: generic-chart
+    version: 2.3.0
+    repository: https://baloise-incubator.github.io/generic-chart/
     alias: kargo-joachim
