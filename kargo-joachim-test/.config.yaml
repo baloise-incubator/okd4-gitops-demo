@@ -4,3 +4,4 @@
     images:
       - image: docker.io/niiku/gitops-nginx-demo
         key: kargo-joachim.kargo-joachim-chart.image.tag
+        repository: https://github.com/baloise-incubator/gitops-nginx-demo.git
