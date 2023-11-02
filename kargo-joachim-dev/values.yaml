@@ -1,0 +1,8 @@
+kargo-joachim:
+  kargo-joachim-chart:
+    image:
+      tag: v0.9.0
+    network:
+      http:
+        ingress:
+          host: kargo-joachim-dev.apps.baloise.dev

@@ -1,0 +1,8 @@
+apiVersion: v2
+name: kargo-joachim-test
+version: 1.0.0
+dependencies:
+  - name: kargo-joachim-chart
+    version: 1.0.0
+    repository: file://../.charts/kargo-joachim-chart
+    alias: kargo-joachim
