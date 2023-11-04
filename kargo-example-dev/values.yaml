@@ -1,0 +1,6 @@
+gitops-nginx-demo:
+  app:
+    network:
+      http:
+        ingress:
+          host: kargo-example-dev.apps.baloise.dev
