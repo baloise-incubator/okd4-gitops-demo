@@ -3,6 +3,6 @@ name: kargo-nik-dev
 version: 1.0.0
 dependencies:
   - name: gitops-nginx-demo
-    version: v0.36.0
+    version: 0.36.0
     repository: https://baloise-incubator.github.io/gitops-nginx-demo
     alias: demo
