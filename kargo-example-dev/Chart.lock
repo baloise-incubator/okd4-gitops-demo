@@ -1,0 +1,6 @@
+dependencies:
+- name: gitops-nginx-demo
+  repository: https://baloise-incubator.github.io/gitops-nginx-demo
+  version: 0.38.0
+digest: sha256:b4d8ffed810f7b621c1366e72b44b6f17d133adf922c2af49142aabe834322a3
+generated: "2023-11-04T18:58:20.520771614Z"
